@@ -1,0 +1,163 @@
+.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.home-page__header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 30px 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+
+  .content {
+    @extend .page-width;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.home-page__content {
+  padding: 30px 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.form-box {
+  position: fixed;
+  top: 50px;
+  left: calc(50% - 150px);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  width: 300px;
+  padding: 60px 50px 50px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid darken($background-color, 5%);
+
+  +.form-box {
+    margin-top: 50px;
+  }
+}
+
+.form-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.form-subtitle {
+  font-size: 16px;
+  text-align: left;
+  margin-top: -35px;
+  margin-bottom: 50px;
+}
+
+.form-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-section {
+  padding: 50px 0;
+}
+
+.list {
+  @extend .page-width;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+.user-record {
+  padding: 30px;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-top: 1px;
+}
+
+.page-section-header {
+  @extend .page-width;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-section-title {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.page-section-action {
+  font-weight: bold;
+  color: gray;
+
+  &:hover {
+    color: $green;
+    cursor: pointer;
+  }
+}
+
+.form-column {
+  // display: inline-block;
+  // vertical-align: top;
+  // margin: 20px 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.form-column__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-message {
+  margin-top: 30px;
+}
+
+.form-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cancel {
+    margin-right: 30px;
+    transition: color 0.15s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: brown;
+      transition: color 0.15s ease;
+    }
+  }
+}
+// change for deplyment
+
+.filters {
+  @extend .page-width;
+  max-width: 800px;
+}
+
+.filter-user-id {
+  margin-left: 10px;
+}
+
+.filter-confirm-button {
+
+}
