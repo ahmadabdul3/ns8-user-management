@@ -36,6 +36,8 @@ export default function(sequelize, DataTypes) {
     models.EventModel
   };
 
+  // - model helper methods
+
   EventModel.findForLatestDate = async () => {
     const latestEvent = await EventModel.findOne({
       limit: 1,
