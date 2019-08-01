@@ -188,7 +188,11 @@ class EventSection extends PureComponent {
     const { value } = e.target;
     if (value === 'user-id-filter') {
       this.setState({ userIdRadioSelected: true });
-    } else {
+    } else if (value === 'all-filter') {
+      this.setState({ userIdRadioSelected: false, userIdFilter: '' }, () => {
+        this.refreshData();
+      });
+    } else if (value === 'latest-filter') {
       this.setState({ userIdRadioSelected: false, userIdFilter: '' }, () => {
         this.refreshData({ filter: '?latest=true' });
       });
@@ -221,6 +225,17 @@ class EventSection extends PureComponent {
         </section>
         <section className='filters'>
           <input
+            id='latest'
+            type='radio'
+            name='filter'
+            value='all-filter'
+            onChange={this.determineRadioFilter} />
+          <label htmlFor='latest' style={{ 'marginLeft': '5px' }}>
+            All
+          </label>
+
+          <input
+            style={{ marginLeft: '20px' }}
             id='latest'
             type='radio'
             name='filter'
