@@ -2,6 +2,8 @@
 
 Live app deployed to Heroku: http://ns8-user-management.herokuapp.com/
 
+(it's on a free dyno so it can take a few seconds to load)
+
 Hi there. First off, this project is a clone of a personal [node-express-sequelize base project](https://github.com/ahmadabdul3/react-redux-express-base) that I use when starting new projects. I update this project from time to time when I'm working on something and find it useful and re-usable to have it ready for future projects. 
 
 This is generally a pure JS project but I added TS after cloning it for this specific user management project. The reason I bring that up is to say that you will see a mix of TS and JS. I tried to keep anything 'new' using TS and anything pre-existing stayed mostly JS. I do want to point out that I've been using TS specifically with node for the past year and I've used other typed languages in the past like C# and Java. Overall, I've been working with node (with webpack and babel) for over 5 years now.
