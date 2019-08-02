@@ -178,7 +178,7 @@ class EventSection extends PureComponent {
     const filter = options && options.filter || '';
     try {
       const response = await http.get('/events' + filter);
-      this.setState({ events: response.data, userIdFilter: '' });
+      this.setState({ events: response.data });
     } catch (e) {
       this.setState({ events: [] });
     }
