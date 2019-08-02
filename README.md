@@ -62,7 +62,7 @@ As far as the `GET` endpoint for events, I decided to go with query params for t
 
 ```/users/:userId/events```
 
-As far as the UI goes, I kept it very simplistic because this was not the focus of the project.
+As far as the UI goes, I kept it very simplistic because this was not the focus of the project, there are definitely some improvements I would make if it were a production app, like having the 'all' filtered pre-checked, and making the modals appear more like a modal. Also, some front-end validations to highlight mistakes before sending a request to the server, etc...
 
 Finally, please disregard all the extra stuff that comes with this project. Again, it's a clone of something I get started with quickly for new projects so there are some services and helper files scattered here and there.
 
