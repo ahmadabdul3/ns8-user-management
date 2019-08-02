@@ -53,5 +53,5 @@ As far as the UI goes, I kept it very simplistic because this was not the focus 
 
 Finally, please disregard all the extra stuff that comes with this project. Again, it's a clone of something I get started with quickly for new projects so there are some services and helper files scattered here and there.
 
-I Hope I didn't miss anything, looking forward to the feedback
+I Hope I didn't miss anything, looking forward to your feedback!
 
