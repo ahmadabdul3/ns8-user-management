@@ -288,6 +288,9 @@ class EventSection extends PureComponent {
                 <div>
                   userId: { ev.userId }
                 </div>
+                <div>
+                  created: { ev.createdAt }
+                </div>
               </div>
             )) : (
               <div className='no-data'>
