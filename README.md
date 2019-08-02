@@ -11,7 +11,16 @@ This is generally a pure JS project but I added TS after cloning it for this spe
 
 ### Building and starting the project
 
-This project uses TS along with webpack and babel. You will also need to have postgreSQL installed and running so the app can connect to it. To build the full bundle, you can run either of the following commands:
+This project uses TS along with webpack and babel. You will also need to have postgreSQL installed and running so the app can connect to it. You will also need to create a `.env` file in the root of the project with the following variables:
+```
+DB_NAME=ns8
+DB_USERNAME=
+DB_PASSWORD=
+DB_HOST=localhost
+DB_PORT=5432
+NODE_ENV=development
+```
+Below is a list of commands with a short description of what each one does:
 
 `npm install` <-- install all dependencies
 
