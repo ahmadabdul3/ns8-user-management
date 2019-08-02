@@ -21,6 +21,8 @@ This project uses TS along with webpack and babel. You will also need to have po
 
 `npm start` <-- start the server, runs on localhost:3000
 
+Side note, when webpack runs it builds 3 separate bundles - the server, frontend, and repl. I generally use all 3 of these chunks when working in a project so I've kept the build process unified. It could also be split to speed up the build of each individual part, but I haven't needed to do that yet.
+
 
 ### Points of Discussion
 
