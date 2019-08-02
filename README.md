@@ -41,7 +41,8 @@ The bulk of the relevant code for this project's requirements lies in the root l
 
 - users router
 - events router
-- the route validators were kept in the router files to keep the code grouped together for easier browsing for you guys
+- the route param validators were kept in the router files to keep the code grouped together for easier browsing for you guys
+  - another point about route param validators is that an npm package could have been for this, but I decided to keep it simple and write my own basic functions for this project
 
 The project requirements mention that 'Data does not need to be persisted between server restarts', but since I have sequelize already set up with this project I went ahead and created a `users` and an `events` model, so data is actually persisted between server restarts. The important thing to note here is that some validations are set up with the model files, like: 
 
